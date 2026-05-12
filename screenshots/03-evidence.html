@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Evidence</title>
+  <style>
+    :root {
+      --bg: #09111d;
+      --panel: #101d2f;
+      --panel-2: #17263c;
+      --line: #29486f;
+      --ink: #f3ecde;
+      --muted: #b5c2d7;
+      --blue: #6db2ff;
+      --pink: #f0bfd7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(54, 103, 164, 0.18), transparent 30%),
+        linear-gradient(180deg, #08111c 0%, #0b1522 100%);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .frame {
+      width: 1440px;
+      min-height: 920px;
+      margin: 0 auto;
+      padding: 48px;
+    }
+    .shell {
+      background: rgba(13, 24, 39, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      padding: 34px 36px 36px;
+    }
+    .eyebrow {
+      margin: 0 0 22px;
+      font: 700 13px/1.2 "Segoe UI", sans-serif;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
+    h1 {
+      margin: 0;
+      font-size: 70px;
+      line-height: 1.02;
+      max-width: 1180px;
+      letter-spacing: -0.05em;
+    }
+    p.lead {
+      margin: 24px 0 0;
+      max-width: 1060px;
+      color: var(--muted);
+      font: 400 19px/1.55 "Segoe UI", sans-serif;
+    }
+    .pills {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin: 22px 0 26px;
+    }
+    .pill {
+      background: #1d2d45;
+      border: 1px solid #335a8d;
+      color: #f5f7fb;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font: 700 15px/1 "Segoe UI", sans-serif;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin: 8px 0 34px;
+    }
+    .card {
+      background: var(--panel-2);
+      border: 1px solid #335885;
+      border-radius: 24px;
+      padding: 22px 22px 18px;
+      min-height: 170px;
+    }
+    .card h2 {
+      margin: 0 0 12px;
+      color: #a8cbff;
+      font: 700 12px/1.2 "Segoe UI", sans-serif;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+    }
+    .metric {
+      font-size: 58px;
+      line-height: 1;
+      margin: 0 0 10px;
+    }
+    .card p, .card li, .table, .lane {
+      color: var(--muted);
+      font: 400 18px/1.45 "Segoe UI", sans-serif;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.25fr 0.85fr;
+      gap: 18px;
+    }
+    .table {
+      display: grid;
+      gap: 12px;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr 0.8fr;
+      gap: 14px;
+      align-items: center;
+      padding: 16px 18px;
+      background: #0c1728;
+      border: 1px solid #223c5d;
+      border-radius: 18px;
+    }
+    .row strong {
+      color: var(--ink);
+      display: block;
+      font: 700 24px/1.1 Georgia, serif;
+    }
+    .small {
+      font-size: 15px;
+      color: #87a2c7;
+    }
+    .lane {
+      padding: 16px 18px;
+      background: #0c1728;
+      border: 1px solid #223c5d;
+      border-radius: 18px;
+      margin-bottom: 12px;
+    }
+    .lane strong {
+      display: block;
+      color: var(--ink);
+      font: 700 24px/1.15 Georgia, serif;
+      margin-bottom: 6px;
+    }
+    pre {
+      margin: 0;
+      color: #d7e8ff;
+      font: 16px/1.5 Consolas, monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="shell">
+      <p class="eyebrow">Case Evidence</p>
+      
+      <h1>The ledger preserves enough context to explain why a case stayed open, improved, or escalated again.</h1>
+      <p class="lead">
+        One intervention record can hold the lane, channel, response pattern, risk shift, closure quality, and next-best action
+        without burying the student story in an opaque CRM timeline.
+      </p>
+      <div class="card">
+        <h2>case evidence</h2>
+        <pre>{&#x27;interventionId&#x27;: &#x27;int-4033&#x27;, &#x27;studentId&#x27;: &#x27;stu-1631&#x27;, &#x27;studentName&#x27;: &#x27;Jordan Alvarez&#x27;, &#x27;program&#x27;: &#x27;BS Information Systems&#x27;, &#x27;ownerLane&#x27;: &#x27;Care Team&#x27;, &#x27;channel&#x27;: &#x27;phone&#x27;, &#x27;eventType&#x27;: &#x27;re-engagement-escalation&#x27;, &#x27;status&#x27;: &#x27;in-progress&#x27;, &#x27;outcome&#x27;: &#x27;partial-response&#x27;, &#x27;daysOpen&#x27;: 9, &#x27;touchCount&#x27;: 5, &#x27;responseReceived&#x27;: True, &#x27;riskShift&#x27;: 5, &#x27;escalationLevel&#x27;: 3, &#x27;closureScore&#x27;: 34, &#x27;effectiveness&#x27;: &#x27;stalled&#x27;, &#x27;nextAction&#x27;: &#x27;Escalate the case again and change the owner lane or channel because the current pattern is not resolving risk.&#x27;}</pre>
+      </div>
+    
+    </div>
+  </div>
+</body>
+</html>
